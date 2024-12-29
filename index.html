@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Ticket</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f4f9;
+      font-family: Arial, sans-serif;
+    }
+
+    .ticket {
+      width: 90%;
+      max-width: 400px;
+      background: #3333cc;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      color: #fff;
+    }
+
+    .ticket-header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background: #fff;
+      color: #333;
+    }
+
+    .ticket-header img {
+      height: 70px;
+      margin-right: 20px;
+      border-radius: 75%;
+    }
+
+    .ticket-header .college-info {
+      flex-grow: 1;
+    }
+
+    .ticket-header .college-info h1 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .ticket-header .college-info p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .ticket-body {
+      padding: 20px;
+      
+    }
+
+    .ticket-body h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .ticket-body p {
+      margin-bottom: 5px;
+    }
+
+    .ticket-body.details {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .ticket-footer {
+      text-align: center;
+      background: #2e4057;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+   
+    @media (max-width: 480px) {
+      .ticket {
+        max-width: 100%;
+      }
+
+      .ticket-header img {
+        height: 50px;
+      }
+
+      .ticket-body h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ticket">
+    <div class="ticket-header">
+      <img src="logo.jpg" alt="College Logo">
+      <div class="college-info">
+        <h1>Keystone School Of Engineering</h1>
+        <p>Pune,Maharashtra</p>
+      </div>
+    </div>
+    <div class="ticket-body">
+      <h2>Annual Fest 2024</h2>
+      <p>Date: 25th December 2024</p>
+      <p>Time: 6:00 PM - 10:00 PM</p>
+      <p>Venue: College Auditorium</p>
+      <div class="details">
+        <p>Ticket No: #12345</p>
+        <p>Issued To: Tanishka Shivarkar</p>
+      </div>
+    </div>
+    <div class="ticket-footer">
+      © 2024 Your College. All Rights Reserved.
+    </div>
+  </div>
+</body>
+</html>
